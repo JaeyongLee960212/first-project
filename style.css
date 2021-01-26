@@ -1,3 +1,13 @@
+
+@keyframes headphoneboom {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 body {
   background-color: tomato;
   width: 100vw;
@@ -8,6 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 40px 0 80px 0;
 }
 
 .bigbox1,
@@ -17,4 +28,77 @@ body {
   justify-content: space-around;
   width: 100%;
   height: 50%;
+  padding: 60px 0;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 10%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-size: 40px;
+  font-weight: 800;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0 50px;
+}
+
+.box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.musicbox {
+  background-color: teal;
+}
+
+.headphone-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.fa-headphones {
+  opacity: 0.5;
+  color: wheat;
+}
+
+.headphone-box:hover {
+  animation: headphoneboom 0.5s ease-in-out infinite;
+}
+
+.musictitle {
+  position: absolute;
+}
+
+.musicbutton {
+  text-decoration: none;
+  color: black;
+}
+
+.moviebox {
+  background-color: thistle;
+}
+
+.gamebox {
+  background-color: yellowgreen;
+}
+
+.communitybox {
+  background-color: violet;
 }
