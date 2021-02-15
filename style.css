@@ -8,12 +8,12 @@
   }
 }
 
-@keyframes movieboom {
+@keyframes movieskew {
   from {
-
+    transform: skew(0deg);
   }
   to {
-    transform:
+    transform: skew(180deg);
   }
 }
 
@@ -103,6 +103,10 @@ body {
 
 .fa-video {
   opacity: 0.5;
+}
+
+.fa-video:hover {
+  animation: movieskew 3s ease-in-out infinite;
 }
 
 .moviebox {
