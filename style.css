@@ -113,7 +113,7 @@ body {
   background-color: thistle;
 }
 
-.cut-box {
+.video-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,6 +128,19 @@ body {
 
 .gamebox {
   background-color: yellowgreen;
+}
+
+.gameconsole-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gametitle {
+  display: absolute;
 }
 
 .communitybox {
