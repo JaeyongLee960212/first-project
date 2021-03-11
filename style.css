@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+=======
+
+@keyframes headphoneboom {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes movieskew {
+  from {
+    transform: skew(0deg);
+  }
+  to {
+    transform: skew(180deg);
+  }
+}
+
+
+>>>>>>> parent of ef3112a (Update first-project1)
 body {
   background-color: tomato;
   width: 100vw;
@@ -23,4 +46,94 @@ body {
 .box {
   font-size: 50px;
   font-weight: 800;
+<<<<<<< HEAD
 }
+=======
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0 50px;
+}
+
+.box:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.musicbox {
+  background-color: teal;
+}
+
+.headphone-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.fa-headphones {
+  opacity: 0.5;
+  color: wheat;
+}
+
+.headphone-box:hover {
+  animation: headphoneboom 0.5s ease-in-out infinite;
+}
+
+.musictitle {
+  position: absolute;
+}
+
+.musicbutton {
+  text-decoration: none;
+  color: black;
+}
+
+.fa-video {
+  opacity: 0.5;
+}
+
+.fa-video:hover {
+  animation: movieskew 3s ease-in-out infinite;
+}
+
+.moviebox {
+  background-color: thistle;
+}
+
+.video-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.movietitle {
+  position: absolute;
+}
+
+.gamebox {
+  background-color: yellowgreen;
+}
+
+.gameconsole-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gametitle {
+  display: absolute;
+}
+
+.communitybox {
+  background-color: violet;
+}
+>>>>>>> parent of ef3112a (Update first-project1)
